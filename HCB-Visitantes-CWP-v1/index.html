@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Wi-Fi Visitantes | HCB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <header class="brand">
+        <div class="logo-mark">HCB</div>
+        <div>
+          <div class="brand-name">Hospital da Criança</div>
+          <div class="brand-sub">de Brasília José Alencar</div>
+        </div>
+      </header>
+
+      <div class="hero">
+        <span class="eyebrow">REDE DE VISITANTES</span>
+        <h1>Wi-Fi Visitantes</h1>
+        <p>Bem-vindo ao HCB. Faça seu cadastro para acessar a Internet.</p>
+      </div>
+
+      <!-- IMPORTANTE:
+           Este formulário é uma prévia visual.
+           Para produção no ExtremeCloud IQ, preserve a action/method
+           e os names dos campos do template UPA/Self-Registration
+           fornecido pelo Extreme. -->
+      <form id="guestForm" class="form" method="post" action="#">
+        <label for="fullName">Nome completo <span>*</span></label>
+        <input id="fullName" name="fullName" type="text" autocomplete="name"
+               placeholder="Digite seu nome completo" required>
+
+        <label for="email">E-mail <span>*</span></label>
+        <input id="email" name="email" type="email" autocomplete="email"
+               placeholder="seuemail@exemplo.com" required>
+
+        <label for="phone">Celular <span>*</span></label>
+        <div class="phone-row">
+          <select id="country" aria-label="País">
+            <option value="+55" selected>🇧🇷 +55</option>
+          </select>
+          <input id="phone" name="phone" type="tel" autocomplete="tel"
+                 inputmode="tel" placeholder="(61) 99999-9999" required>
+        </div>
+
+        <div class="consent-box">
+          <label class="check">
+            <input type="checkbox" id="terms" required>
+            <span>Li e aceito os <a href="terms.html">Termos de Uso</a> e estou ciente da <a href="privacy.html">Política de Privacidade</a>.</span>
+          </label>
+
+          <label class="check optional">
+            <input type="checkbox" id="communications" name="communications">
+            <span>Quero receber comunicações institucionais do HCB.</span>
+          </label>
+        </div>
+
+        <button type="submit">CONECTAR À INTERNET</button>
+
+        <p class="required-note">* Campos obrigatórios.</p>
+      </form>
+
+      <footer>
+        <a href="terms.html">Termos de Uso</a>
+        <span>•</span>
+        <a href="privacy.html">Privacidade</a>
+        <p>HCB • Hospital da Criança de Brasília José Alencar</p>
+      </footer>
+    </section>
+  </main>
+  <script src="js/portal.js"></script>
+</body>
+</html>
